@@ -1,12 +1,9 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class CameraMovement : MonoBehaviour
 {
-
-    public static float moveSpeed = 16;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +13,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
-        
+        transform.Translate(Vector3.forward * Time.deltaTime * PlayerMovement.moveSpeed, Space.World);
     }
 }
