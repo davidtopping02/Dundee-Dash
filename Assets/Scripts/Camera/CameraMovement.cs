@@ -1,18 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
+        // Moves the camera forward at the same rate as the player
         transform.Translate(Vector3.forward * Time.deltaTime * PlayerMovement.moveSpeed, Space.World);
     }
 }
