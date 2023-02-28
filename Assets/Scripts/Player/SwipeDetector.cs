@@ -114,7 +114,7 @@ public class SwipeDetector : MonoBehaviour
             // get the player's Rigidbody component
             Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
 
-            playerRigidbody.AddForce(Vector3.up * 14f, ForceMode.Impulse);
+            playerRigidbody.AddForce(Vector3.up * 25f, ForceMode.Impulse);
             playerRigidbody.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
     }
@@ -147,7 +147,7 @@ public class SwipeDetector : MonoBehaviour
         {
             // move the player to the left lane
             currentLane--;
-            player.transform.position = new Vector3(currentLane * 2, player.transform.position.y, player.transform.position.z);
+            player.transform.position = new Vector3(currentLane * 3f, player.transform.position.y, player.transform.position.z);
         }
     }
 
@@ -161,7 +161,7 @@ public class SwipeDetector : MonoBehaviour
         {
             // move the player to the left lane
             currentLane++;
-            player.transform.position = new Vector3(currentLane * 2, player.transform.position.y, player.transform.position.z);
+            player.transform.position = new Vector3(currentLane * 3f, player.transform.position.y, player.transform.position.z);
 
         }
     }

@@ -4,11 +4,22 @@ public class GroundTile : MonoBehaviour
 {
 
     GroundGenerator groundGenerator;
+    public GameObject obstaclePrefab;
 
     // Start is called before the first frame update
     void Start()
     {
         groundGenerator = GameObject.FindObjectOfType<GroundGenerator>();
+
+        int obstacleSpawnPointIndex = Random.Range(2, 5);
+
+        // choose random spawn point
+        Transform spawnPoint = transform.GetChild(obstacleSpawnPointIndex).transform;
+
+        Debug.Log(obstacleSpawnPointIndex);
+
+        //spwan obstacle at the random spawn point
+        obstaclePrefab = Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity);
     }
 
     private void OnTriggerExit(Collider other)
@@ -25,13 +36,5 @@ public class GroundTile : MonoBehaviour
     void Update()
     {
 
-<<<<<<< Updated upstream
-=======
-        // choose random spawn point
-        Transform spawnPoint = transform.GetChild(obstacleSpawnPointIndx).transform;
-
-        //spwan obstacle at the random spawn point
-        obstaclePrefab = Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity);
->>>>>>> Stashed changes
     }
 }
