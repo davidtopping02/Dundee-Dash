@@ -17,6 +17,7 @@ public class GroundTile : MonoBehaviour
         groundGenerator.spawnTile();
 
         //destroys the current tile 1 seconds after the player exits it
+        Destroy(obstaclePrefab, 1);
         Destroy(gameObject, 1);
     }
 
@@ -24,5 +25,13 @@ public class GroundTile : MonoBehaviour
     void Update()
     {
 
+<<<<<<< Updated upstream
+=======
+        // choose random spawn point
+        Transform spawnPoint = transform.GetChild(obstacleSpawnPointIndx).transform;
+
+        //spwan obstacle at the random spawn point
+        obstaclePrefab = Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity);
+>>>>>>> Stashed changes
     }
 }

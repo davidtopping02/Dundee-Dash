@@ -178,13 +178,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6321327328734214491, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8957437872445391880, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
       propertyPath: m_Drag
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8957437872445391880, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
       propertyPath: m_Mass
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8957437872445391880, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
       propertyPath: m_UseGravity

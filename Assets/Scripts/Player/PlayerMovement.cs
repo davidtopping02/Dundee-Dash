@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,5 +18,17 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
 
+    }
+
+    void OnCollisionEnter(Collision targetObj)
+    {
+        Debug.Log(targetObj.gameObject.name);
+        if (targetObj.gameObject.tag == "obstacle")
+        {
+            Debug.Log("collision");
+
+            // currently floor is a collision detection...
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

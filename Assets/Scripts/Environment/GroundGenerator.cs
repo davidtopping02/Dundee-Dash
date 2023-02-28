@@ -10,8 +10,8 @@ public class GroundGenerator : MonoBehaviour
     public void spawnTile()
     {
         // instantiate new tile in the next spawn point with the same rotation 
-        GameObject temp = Instantiate(GroundTile, nextSpawnPoint, Quaternion.identity);
-        nextSpawnPoint = temp.transform.GetChild(1).transform.position;
+        GameObject tile = Instantiate(GroundTile, nextSpawnPoint, Quaternion.identity);
+        nextSpawnPoint = tile.transform.GetChild(1).transform.position;
     }
 
     // Start is called before the first frame update

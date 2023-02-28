@@ -109,22 +109,32 @@ public class SwipeDetector : MonoBehaviour
         Debug.Log("Swipe Up");
 
         // check if the player is on the ground
-        if (player.transform.position.y == 1)
+        if (player.transform.position.y < 0.3)
         {
             // get the player's Rigidbody component
             Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
 
-            // consitent jump height
-            float jumpHeight = 2.5f; // set the desired jump height in units
-            float timeToJumpApex = Mathf.Sqrt(2 * jumpHeight / Physics.gravity.magnitude);
-            float jumpVelocity = Mathf.Abs(Physics.gravity.y) * timeToJumpApex;
-            playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, jumpVelocity, playerRigidbody.velocity.z);
+            playerRigidbody.AddForce(Vector3.up * 14f, ForceMode.Impulse);
+            playerRigidbody.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
     }
 
     void OnSwipeDown()
     {
         Debug.Log("Swipe Down");
+
+        // check if the player is on the ground
+        if (player.transform.position.y > 1)
+        {
+            // get the player's Rigidbody component
+            Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
+
+            playerRigidbody.AddForce(Vector3.down * 11f, ForceMode.Impulse);
+        }
+        else
+        {
+            Debug.Log("player slide");
+        }
     }
 
 
