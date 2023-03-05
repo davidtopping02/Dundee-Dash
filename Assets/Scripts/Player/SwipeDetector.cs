@@ -114,7 +114,7 @@ public class SwipeDetector : MonoBehaviour
             // get the player's Rigidbody component
             Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
 
-            playerRigidbody.AddForce(Vector3.up * 25f, ForceMode.Impulse);
+            playerRigidbody.AddForce(Vector3.up * 29f, ForceMode.Impulse);
             playerRigidbody.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
     }
