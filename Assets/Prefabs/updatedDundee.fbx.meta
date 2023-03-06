@@ -1,0 +1,1093 @@
+fileFormatVersion: 2
+guid: 4dcbaf3dd3a594f44854c8cc934411e5
+ModelImporter:
+  serializedVersion: 20300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00000-texture
+    second: {fileID: 2800000, guid: 8527c98a256b8ea40b1f3162b1747095, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00001-texture
+    second: {fileID: 2800000, guid: 4e5f1d27b354f0c43a431f1103c3ad26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00002-texture
+    second: {fileID: 2800000, guid: 37ea1fcca3b6e534a8c21497e8bd2cd0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00003-texture
+    second: {fileID: 2800000, guid: 27d6ae39f212ba745932ab3b4c30c800, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00004-texture
+    second: {fileID: 2800000, guid: 67466f1c31217d54097903c62e5b1cbc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00005-texture
+    second: {fileID: 2800000, guid: 8171891f8b22c0c4bab2413b7d8156f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00006-texture
+    second: {fileID: 2800000, guid: d786f994673ea704d925bae146d12403, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00007-texture
+    second: {fileID: 2800000, guid: efed6f1e460653a4988a9752eb84599d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00008-texture
+    second: {fileID: 2800000, guid: 87a8598db7a609b4ba1071de636265ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00009-texture
+    second: {fileID: 2800000, guid: f90e5ac99afbab04a8d9d2acd580400e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00010-texture
+    second: {fileID: 2800000, guid: bd2b9675210fae148a8fc3bbb4bd9742, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00011-texture
+    second: {fileID: 2800000, guid: 08f631d9879147743a5515ff2a5153fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00012-texture
+    second: {fileID: 2800000, guid: badf3b3913367d4409651ca8901b3da5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00013-texture
+    second: {fileID: 2800000, guid: 64c7ba8c1a6dfa94bab8fa5045d6fa12, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00014-texture
+    second: {fileID: 2800000, guid: 765441d1f421819429fc1b05838162f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00015-texture
+    second: {fileID: 2800000, guid: 77f4b34f91c89424d87216d20da52a6c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00016-texture
+    second: {fileID: 2800000, guid: 104b5fa4779b2674b982829df7280f5b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00017-texture
+    second: {fileID: 2800000, guid: 5f77b7d2d27c83d45b2b3530ae6f7bba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00018-texture
+    second: {fileID: 2800000, guid: ed7c7cb85ccd0d441a172d3d0dcb80d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00019-texture
+    second: {fileID: 2800000, guid: ad2f996e437ec8f45b290123920f6763, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00020-texture
+    second: {fileID: 2800000, guid: b2d7fd4a9fc3b3245b706802c484128e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00021-texture
+    second: {fileID: 2800000, guid: bf81c25878f6c8d4ab2039ea7f05f744, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00022-texture
+    second: {fileID: 2800000, guid: baf0c46ecaf8b0f438a8e5172cbfdc27, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00023-texture
+    second: {fileID: 2800000, guid: 9708b90349f82d542be9930c5d6b8e4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00024-texture
+    second: {fileID: 2800000, guid: 50befd106630d3e48b84ab08e42b7979, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00025-texture
+    second: {fileID: 2800000, guid: 3091b91b6718cd146a84dc5e0465d214, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00026-texture
+    second: {fileID: 2800000, guid: 6b3379164dbf9ba42ad1a2ce0c91b8b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00027-texture
+    second: {fileID: 2800000, guid: 1042ed339144c36428be7b8fdab22be4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00028-texture
+    second: {fileID: 2800000, guid: 2cacf9d4ff211b245a1d7d8bae3249dd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00029-texture
+    second: {fileID: 2800000, guid: 2e392e3b19d9048429bd6bd6abb0530c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00030-texture
+    second: {fileID: 2800000, guid: ed058c44e9d5198459a72bd0f0bff75d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00031-texture
+    second: {fileID: 2800000, guid: 68af3a7f83fe4804da260825316ab54d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00032-texture
+    second: {fileID: 2800000, guid: 5a94c88389211784191002b6f2aa7535, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00033-texture
+    second: {fileID: 2800000, guid: f6033d8a86680dc4b9a4e26c09109409, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00034-texture
+    second: {fileID: 2800000, guid: 47d45f583d4579044afb50f542462e2c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00035-texture
+    second: {fileID: 2800000, guid: 6fbfdf65300af924790b617450dd53aa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00036-texture
+    second: {fileID: 2800000, guid: 9b9a2ad90442e594897b1a9a358193b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00037-texture
+    second: {fileID: 2800000, guid: 8cf27acd6480f30468e89b9800344e3e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00038-texture
+    second: {fileID: 2800000, guid: 87a1c7788232d5f43bfc1b632acbd491, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00039-texture
+    second: {fileID: 2800000, guid: 61f940acb40532946a90676893f4f4c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00040-texture
+    second: {fileID: 2800000, guid: 8d09511a2e55c664482a28d3d15fa6d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00041-texture
+    second: {fileID: 2800000, guid: dd8f74cf2667aa5438d81ec52d3f0393, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00042-texture
+    second: {fileID: 2800000, guid: eb2b0f6658dd7224a953538d0b92244d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00043-texture
+    second: {fileID: 2800000, guid: dfb23f4e6eea73e42bc8201d1cefa3eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00044-texture
+    second: {fileID: 2800000, guid: fe3abc66b8cc58b47a817d5671bfeedb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00045-texture
+    second: {fileID: 2800000, guid: 30b73f72267a712488856b4d4434c69a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00046-texture
+    second: {fileID: 2800000, guid: deb4632ebb30cbc459a6829472d7606f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00047-texture
+    second: {fileID: 2800000, guid: d636f1b45d096434daa07dd1229b9b00, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00048-texture
+    second: {fileID: 2800000, guid: 2c5a66205e38117459a130eb08139e72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00049-texture
+    second: {fileID: 2800000, guid: 6d4462ee9c9646842b21def8f8ca73c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00050-texture
+    second: {fileID: 2800000, guid: 89170ba29d9edd2488641a60764b2c5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00051-texture
+    second: {fileID: 2800000, guid: 5402292f095be6f45bb118f49bd4126c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00052-texture
+    second: {fileID: 2800000, guid: bf3a638fb08508c4bb0fa8399dc3f149, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00053-texture
+    second: {fileID: 2800000, guid: af792d64584631249bc26a4f63c03231, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00054-texture
+    second: {fileID: 2800000, guid: a11073db7821bd241b0f1bafb78eba54, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00055-texture
+    second: {fileID: 2800000, guid: 2f1edeaa2aedc664e8a8f317fd36deb6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00056-texture
+    second: {fileID: 2800000, guid: 6cda98b716a4c2b4c844536364153233, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00057-texture
+    second: {fileID: 2800000, guid: 80c72304bd28adc4a8b4e9cb3fa0633d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00058-texture
+    second: {fileID: 2800000, guid: 8a178f7aad1a40d438edd82a3eafabb7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00059-texture
+    second: {fileID: 2800000, guid: 6142cc2237be1914c93c798b14a74c75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00060-texture
+    second: {fileID: 2800000, guid: 7df610ae9033d1f4d9a41030c2afe237, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00061-texture
+    second: {fileID: 2800000, guid: 02fba9fdaa3237d4bbed1f47c2efe90b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00062-texture
+    second: {fileID: 2800000, guid: febd9b12d13239e4da98283c8c4d18fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00063-texture
+    second: {fileID: 2800000, guid: 302420896d082ca458ecedfbeacd6856, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00064-texture
+    second: {fileID: 2800000, guid: 6ae816165b49c6a4fb52024da38cd84b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00065-texture
+    second: {fileID: 2800000, guid: cdd4e2edac05bfb42b73c298b08289f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00066-texture
+    second: {fileID: 2800000, guid: 9c0bfd430ab3c084ab5297090e555a79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00067-texture
+    second: {fileID: 2800000, guid: b6ca5ea85b14a2d43bcdd63c131e644b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00068-texture
+    second: {fileID: 2800000, guid: 50657b9af5c4b784482752cb132b8755, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00069-texture
+    second: {fileID: 2800000, guid: 40cbf8b49b4fa1f42a5b23bdfe022738, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00070-texture
+    second: {fileID: 2800000, guid: 0d052f25827dee2478eda52e722667ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00071-texture
+    second: {fileID: 2800000, guid: 33abbebf241f1e44e9597882e0d11b3e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00072-texture
+    second: {fileID: 2800000, guid: ee6f41d9f9af4a141b16cb85bd60fd68, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00073-texture
+    second: {fileID: 2800000, guid: 2a62242e72898a6448e73a100fe7e352, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00074-texture
+    second: {fileID: 2800000, guid: 5ca6b65b6efc89144933a53c08b9bdaa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00075-texture
+    second: {fileID: 2800000, guid: 1f55d91f95b9c8347b3dbef67b3b6005, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00076-texture
+    second: {fileID: 2800000, guid: c2058d55fce013e45a22f684443d1568, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00077-texture
+    second: {fileID: 2800000, guid: 76ac036466c841243ada07dffeed395e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00078-texture
+    second: {fileID: 2800000, guid: b6329e8b89497234d911df646b99e580, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00079-texture
+    second: {fileID: 2800000, guid: 4918e21f1dc0be946ac06997f29fa756, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00080-texture
+    second: {fileID: 2800000, guid: dbcd1069ae2877c48abc283ed8bafa0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00081-texture
+    second: {fileID: 2800000, guid: d13b85c406a24984da86863b9bdfaf55, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00082-texture
+    second: {fileID: 2800000, guid: f724098645ac4334e8a6826d4989d947, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00083-texture
+    second: {fileID: 2800000, guid: 0bc31a93dd3ed164ebce36dc0bc8cac4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00084-texture
+    second: {fileID: 2800000, guid: 8c0267338f7a5e74da104e6c1028c618, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00085-texture
+    second: {fileID: 2800000, guid: c9cf1f922080be94ebb65221f4725ea8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00086-texture
+    second: {fileID: 2800000, guid: f56f7e793503bb948825c0f0aa9922f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00087-texture
+    second: {fileID: 2800000, guid: 64f204b00ba0fc1488c01212514481d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00088-texture
+    second: {fileID: 2800000, guid: 8c1e1863f76c14343957e5aee88b2757, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00089-texture
+    second: {fileID: 2800000, guid: 66849cf96310cd245af1fc668f57c3a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00090-texture
+    second: {fileID: 2800000, guid: 2265ff48f79a5f143960f4ed7fe765ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00091-texture
+    second: {fileID: 2800000, guid: 8e715219ee221a14fb663674db25fb48, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00092-texture
+    second: {fileID: 2800000, guid: 9843c32aee22f6d43a2fa871f3873729, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00093-texture
+    second: {fileID: 2800000, guid: ca6c4700e803d75488a376c70b99ff2f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00094-texture
+    second: {fileID: 2800000, guid: cb8cb0d421875d24b84d499b678c804d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00095-texture
+    second: {fileID: 2800000, guid: 84250aaed59efbb4a8975954a1c8c197, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00096-texture
+    second: {fileID: 2800000, guid: b9d7c7ab2b8318c47871f0d588630ba9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00097-texture
+    second: {fileID: 2800000, guid: 386f0649aab8cba4f9f10714abd2793c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00098-texture
+    second: {fileID: 2800000, guid: c3b052f107219a945b8db920125de46c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00099-texture
+    second: {fileID: 2800000, guid: c967fd20a014f564f89afc32cc61ac3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00100-texture
+    second: {fileID: 2800000, guid: 85ff5ed0185eef8468e51b7e9299ef6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00101-texture
+    second: {fileID: 2800000, guid: caf2e8288e9422249bdc741e2f6adae2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00102-texture
+    second: {fileID: 2800000, guid: 7ca38f4403e95aa469e619545a1f1bc7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00103-texture
+    second: {fileID: 2800000, guid: 581d3bb1af7566c4eb2ca404370824fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00104-texture
+    second: {fileID: 2800000, guid: 71840d3a94af5d44999698dc0a82ef24, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00105-texture
+    second: {fileID: 2800000, guid: a83653aa8d0d71042ad6a9686c367169, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00107-texture
+    second: {fileID: 2800000, guid: b81ca3066768617498188b8fed7edb30, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00108-texture
+    second: {fileID: 2800000, guid: 6bcefe9e684d2cf4aa42d6322f29582f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00109-texture
+    second: {fileID: 2800000, guid: 7978a0dce1ad8cd4c8b6294a5938f227, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00110-texture
+    second: {fileID: 2800000, guid: f818066795daf6c4fa64688e0a5e06b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00111-texture
+    second: {fileID: 2800000, guid: 4b1af7baa694657499ff4c9ab1076234, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00112-texture
+    second: {fileID: 2800000, guid: 30eb8c0f3eec983409b2348f06d832ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00113-texture
+    second: {fileID: 2800000, guid: 4a69bfcf4ceb01a4d9dab8f6011e4c93, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00114-texture
+    second: {fileID: 2800000, guid: 5cd17e19dc045134fbc3817f252a4359, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00115-texture
+    second: {fileID: 2800000, guid: 772feb25fdf69584296a59491e819623, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00116-texture
+    second: {fileID: 2800000, guid: 9bdbfe9e49f49a943a7c116aa02758a9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00117-texture
+    second: {fileID: 2800000, guid: b51bd8f72a69bf3479092d360f5a9b0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00118-texture
+    second: {fileID: 2800000, guid: 17019790661520c4da1d6ecc7e84c27b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00119-texture
+    second: {fileID: 2800000, guid: 1266a57b385c95c45af8ef86e12a5d46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00120-texture
+    second: {fileID: 2800000, guid: 32105972618a7a341ad75124016f3464, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00121-texture
+    second: {fileID: 2800000, guid: 7467e22d4649f774ab9b28b2f2715dd1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00122-texture
+    second: {fileID: 2800000, guid: c3c932e6d8c861d4b9673ccc6be19484, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00123-texture
+    second: {fileID: 2800000, guid: 5bc7b6d23384adc47a2105a0f163318c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00124-texture
+    second: {fileID: 2800000, guid: 460c7d1308af0a34089709b046b3481f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00125-texture
+    second: {fileID: 2800000, guid: 93fe9892e2c3be34c8af292410c78fae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00126-texture
+    second: {fileID: 2800000, guid: 0c11a8bc345232b4dbe85fb16d752247, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00127-texture
+    second: {fileID: 2800000, guid: cfa7399190923eb4caa923a1ba5e17bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00128-texture
+    second: {fileID: 2800000, guid: e43325c1210d60c41b3aab329ed22dc2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00129-texture
+    second: {fileID: 2800000, guid: c087e59ea55e05a4181f2c467d234f4d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00130-texture
+    second: {fileID: 2800000, guid: e60b2ed53d25db74faa313b74f864e40, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00131-texture
+    second: {fileID: 2800000, guid: 0be6c6a3482536947a8678e2cdc5f74b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00132-texture
+    second: {fileID: 2800000, guid: 98da57a292576114e837705b85d03ad2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00133-texture
+    second: {fileID: 2800000, guid: e0c140c30df543e449ae42b507d98db0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00135-texture
+    second: {fileID: 2800000, guid: 7ab2b5a8b41402d4fa61c21a1fc0243f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00136-texture
+    second: {fileID: 2800000, guid: f06062588f6d7a14aa09d3f4cf1e205a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00137-texture
+    second: {fileID: 2800000, guid: c130920690d6823429c8e6bb05e29540, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00138-texture
+    second: {fileID: 2800000, guid: 92e6067e074c880428b5b13a785118ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00139-texture
+    second: {fileID: 2800000, guid: 57d26c81f63309440938b760a59700ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00140-texture
+    second: {fileID: 2800000, guid: b431998b75a021f429516b48d18ed123, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00142-texture
+    second: {fileID: 2800000, guid: 005911e07be470c42b1942a227eff44b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00144-texture
+    second: {fileID: 2800000, guid: 879629ecdb9ac0b4987241017e7563a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00145-texture
+    second: {fileID: 2800000, guid: 95dac279ddff1cb4d93579de4b5da4e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00146-texture
+    second: {fileID: 2800000, guid: a5a96475d1b090048b70def42fc10585, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00147-texture
+    second: {fileID: 2800000, guid: 4030edcc77e692a4f85c4c8b256b6280, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00148-texture
+    second: {fileID: 2800000, guid: 19986ef11beea1141a9fa7e571193442, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00149-texture
+    second: {fileID: 2800000, guid: fda1fe47656f9a44db9827d314adaf8d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00154-texture
+    second: {fileID: 2800000, guid: 6466d6fed528d6f4ca8ddb8027ff4b4c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00155-texture
+    second: {fileID: 2800000, guid: aa6e0c664cd2abd41b7bb00756ccb9cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00156-texture
+    second: {fileID: 2800000, guid: 05267e50762d04442836f66c26457ba1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00157-texture
+    second: {fileID: 2800000, guid: 8abb4156442bbdd4a91925f9b5cbc756, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00160-texture
+    second: {fileID: 2800000, guid: 0c63202fa4c792a449c3652d03fbd668, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00162-texture
+    second: {fileID: 2800000, guid: 11f0e6578c310f947b4ff7cfbe0dc710, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00163-texture
+    second: {fileID: 2800000, guid: f7bfde9f959cbbe4691965c9b1649d19, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00170-texture
+    second: {fileID: 2800000, guid: 1246eac23d72b2e4d9982edad27aa097, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00171-texture
+    second: {fileID: 2800000, guid: d92d5109536079c459e15a25b18cd5cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00172-texture
+    second: {fileID: 2800000, guid: 35a37c00375856f4a8a2d2c0eb5ab5f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00173-texture
+    second: {fileID: 2800000, guid: eddcc0efbfb44634c8d99b448af02516, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00174-texture
+    second: {fileID: 2800000, guid: ca64ed4ca3b4d27489a688445099d718, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00175-texture
+    second: {fileID: 2800000, guid: 52f3c4536d6d18240b87c29e9acff9c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00176-texture
+    second: {fileID: 2800000, guid: 54aaaacb1f9de31489ed17981f5e05d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00179-texture
+    second: {fileID: 2800000, guid: 54523e1f33534bb44a5592f1e4ac9d77, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00180-texture
+    second: {fileID: 2800000, guid: 45571aaa17d91884d927ec85c9827af0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00181-texture
+    second: {fileID: 2800000, guid: 117e232e920b3424185b147e0957d7b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00182-texture
+    second: {fileID: 2800000, guid: b85a965b3a4274e4486e6fcc0efaa1be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00183-texture
+    second: {fileID: 2800000, guid: bb55cbfb85a92b046b5e7ba12ef331ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00188-texture
+    second: {fileID: 2800000, guid: c75e414203a12134995972817ebd7557, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00189-texture
+    second: {fileID: 2800000, guid: 91b28dd270afeef43abe0e0024d394d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00194-texture
+    second: {fileID: 2800000, guid: dd620ced087c7f14a91b2f02872cc1bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00195-texture
+    second: {fileID: 2800000, guid: 29e9d017f4d916e49b93f678c8330008, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00196-texture
+    second: {fileID: 2800000, guid: cf9c99aff805efd4d94033a37f606c18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00197-texture
+    second: {fileID: 2800000, guid: cf13f20466385f142b8611aa5e178734, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00198-texture
+    second: {fileID: 2800000, guid: b2f8c446114133742838a7f4e0afe33a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00199-texture
+    second: {fileID: 2800000, guid: fa5e8bbc03a062646a66cb7a682986b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00202-texture
+    second: {fileID: 2800000, guid: df934970a2522174abe4c036b8cf3e02, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00203-texture
+    second: {fileID: 2800000, guid: 4bfebb0044909264590a0276c3d35ada, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00204-texture
+    second: {fileID: 2800000, guid: a454ea08b1097a0449702dbad6102ad2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00205-texture
+    second: {fileID: 2800000, guid: 540889fe81cb70a4f841b81c4ecf4639, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00214-texture
+    second: {fileID: 2800000, guid: 5c66f102a106b5e4eb0a6d18989ea544, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00215-texture
+    second: {fileID: 2800000, guid: aa16f42fd2d1a7c429e64ceb521083ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00216-texture
+    second: {fileID: 2800000, guid: 1f5c2480eee636944afdc2085e2c4f59, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00217-texture
+    second: {fileID: 2800000, guid: 0f01b24ef4c84814c9e3cc2fc78d3f14, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00226-texture
+    second: {fileID: 2800000, guid: b74fefda381311c4c9635c2db975e144, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00227-texture
+    second: {fileID: 2800000, guid: 0a4d03c17a1410f4ea874d775bad0b76, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00228-texture
+    second: {fileID: 2800000, guid: e0da6b5dcc0397748a371f893bf7ddc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00229-texture
+    second: {fileID: 2800000, guid: b700e091edd69a94bb5564e9eb85b2f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00230-texture
+    second: {fileID: 2800000, guid: f2864fe1eca1a8d48ba97bc964f4b09d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00231-texture
+    second: {fileID: 2800000, guid: 41698bbaa95921343a22d6ee05af519a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00239-texture
+    second: {fileID: 2800000, guid: 9e956d172bd71874b842440a7041bc3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00240-texture
+    second: {fileID: 2800000, guid: 6a275ed86648a7443bd5210be78bab46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00241-texture
+    second: {fileID: 2800000, guid: c970e839e7fd47d43b44fcf6bb8c252f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00242-texture
+    second: {fileID: 2800000, guid: 88845307b9c34dd45b80600aa8fd3c1f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00243-texture
+    second: {fileID: 2800000, guid: 1739d737514cd1443b6b7ead746e566c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00255-texture
+    second: {fileID: 2800000, guid: 174a4432f088a2342853828ae9ea7391, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00256-texture
+    second: {fileID: 2800000, guid: 0016a210a530e26468e5eb3913f3d136, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00257-texture
+    second: {fileID: 2800000, guid: 8c8d3233635627a439522f8dd5d68ac9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00258-texture
+    second: {fileID: 2800000, guid: b14edc2c72e584e44b61935be358925f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00259-texture
+    second: {fileID: 2800000, guid: a91115a757791d14bbcc424fc8e53d5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Dundee-00260-texture
+    second: {fileID: 2800000, guid: 9a368d45f32b466409a1cbff76c47e1d, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 2
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
