@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /**
  * Swipe detection code was inspired from the following stack overflow thread
@@ -13,13 +14,10 @@ public class SwipeDetector : MonoBehaviour
     public float SWIPE_THRESHOLD = 10f;
     public bool detectSwipeOnlyAfterRelease = true;
 
-    // player movement fields
-    public GameObject player;
-    private int currentLane = 0;
-
 
     void Update()
     {
+        // checks for user input each frame
         foreach (Touch touch in Input.touches)
         {
             if (touch.phase == TouchPhase.Began)
@@ -101,68 +99,30 @@ public class SwipeDetector : MonoBehaviour
         return Mathf.Abs(fingerDown.x - fingerUp.x);
     }
 
-    //////////////////////////////////CALLBACK FUNCTIONS/////////////////////////////
 
-    // jump
+    // swipe events 
+    public UnityEvent swipeUp;
+    public UnityEvent swipeDown;
+    public UnityEvent swipeLeft;
+    public UnityEvent swipeRight;
+
     void OnSwipeUp()
     {
-        Debug.Log("Swipe Up");
-
-        // check if the player is on the ground
-        if (player.transform.position.y < 0.3)
-        {
-            // get the player's Rigidbody component
-            Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
-
-            playerRigidbody.AddForce(Vector3.up * 29f, ForceMode.Impulse);
-            playerRigidbody.AddForce(Vector3.down * 5f, ForceMode.Impulse);
-        }
+        swipeUp.Invoke();
     }
 
     void OnSwipeDown()
     {
-        Debug.Log("Swipe Down");
-
-        // check if the player is on the ground
-        if (player.transform.position.y > 1)
-        {
-            // get the player's Rigidbody component
-            Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
-
-            playerRigidbody.AddForce(Vector3.down * 11f, ForceMode.Impulse);
-        }
-        else
-        {
-            Debug.Log("player slide");
-        }
+        swipeDown.Invoke();
     }
-
-
     void OnSwipeLeft()
     {
-        Debug.Log("Swipe Left");
-
-        // checking the player is not in the left-most lane
-        if (currentLane == 0 || currentLane == 1)
-        {
-            // move the player to the left lane
-            currentLane--;
-            player.transform.position = new Vector3(currentLane * 3f, player.transform.position.y, player.transform.position.z);
-        }
+        swipeLeft.Invoke();
     }
 
     void OnSwipeRight()
     {
-
-        Debug.Log("Swipe Right");
-
-        // checking the player is not in the left-most lane
-        if (currentLane == -1 || currentLane == 0)
-        {
-            // move the player to the left lane
-            currentLane++;
-            player.transform.position = new Vector3(currentLane * 3f, player.transform.position.y, player.transform.position.z);
-
-        }
+        swipeRight.Invoke();
     }
+
 }

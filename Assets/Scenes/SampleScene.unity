@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2488315657129970157, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2488315657129970157, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2488315657129970157, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2488315657129970157, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
       propertyPath: m_LocalRotation.w
@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2488315657129970158, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 683244315}
     - target: {fileID: 6321327328734214491, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -215,7 +219,7 @@ Animator:
   m_GameObject: {fileID: 667778689}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e766d0bef0f9418408091ad791cddf50, type: 2}
+  m_Controller: {fileID: 9100000, guid: 914029c19dc164c41821ca2b1c2c4992, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -230,6 +234,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2488315657129970156, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
   m_PrefabInstance: {fileID: 353333288}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &683244319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2488315657129970158, guid: 3aedca4f1db2b624c877bfd419896e71, type: 3}
+  m_PrefabInstance: {fileID: 353333288}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683244315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e025cf0f56906814fa5b4a17aed848e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,13 +484,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.19048505, y: -0.008135417, z: 0.0017354313, w: 0.9816549}
+  m_LocalRotation: {x: 0.17929311, y: -0.008115125, z: 0.0018279686, w: 0.98376054}
   m_LocalPosition: {x: 0.02, y: 8, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.963, y: -0.946, z: 0.019}
+  m_LocalEulerAnglesHint: {x: 20.658, y: -0.938, z: 0.042}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +536,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SWIPE_THRESHOLD: 20
   detectSwipeOnlyAfterRelease: 1
-  player: {fileID: 683244315}
+  swipeUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 683244319}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: jump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  swipeDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 683244319}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: slide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  swipeLeft:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 683244319}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: moveLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  swipeRight:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 683244319}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: moveRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1037837181
 Transform:
   m_ObjectHideFlags: 0
@@ -532,7 +606,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.79999995, z: 2.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1323038125}
+  - {fileID: 1720472395}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -573,12 +649,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323038123}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.79999995, z: -2.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1037837181}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1454579071 stripped
 Transform:
@@ -609,13 +685,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720472394}
-  m_LocalRotation: {x: 0, y: -0.051377337, z: 0, w: 0.99867934}
-  m_LocalPosition: {x: -0.15, y: 7.67, z: -20}
+  m_LocalRotation: {x: -0, y: -0.051377337, z: -0, w: 0.99867934}
+  m_LocalPosition: {x: -0.15, y: 6.87, z: -22.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1454579071}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1037837181}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -5.89, z: 0}
 --- !u!114 &1720472396
 MonoBehaviour:
