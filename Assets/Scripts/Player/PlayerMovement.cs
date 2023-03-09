@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // continiously moving the player forward
         animator.SetBool("isTripping", false);
+        animator.SetBool("isSliding", false);
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
     }
 
@@ -83,10 +85,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            animator.SetBool("isSliding", true);
 
         }
     }
-
 
     public void moveLeft()
     {
@@ -125,10 +127,20 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    // animates the players trip and decrements health
     private void playerTrip()
     {
         playerHealth -= 0.5;
         animator.SetBool("isTripping", true);
+        StartCoroutine(resetPlayerHealth(1));
+    }
+
+    // resets the players health after specified time
+    IEnumerator resetPlayerHealth(float delay)
+    {
+        Debug.Log("here");
+        yield return new WaitForSeconds(delay);
+        playerHealth = 1;
     }
 
 }
