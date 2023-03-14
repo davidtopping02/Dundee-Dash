@@ -1,26 +1,56 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GroundGenerator : MonoBehaviour
 {
-
     public GameObject GroundTile;
-    Vector3 nextSpawnPoint;
+    LinkedList<GameObject> allTiles = new LinkedList<GameObject>();
+    GameObject currentTile;
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 20; i++)
+        // spawns the initial tiles for the path
+        for (int i = 0; i < 4; i++)
         {
             spawnTile();
         }
     }
 
+    private GameObject newTile(Vector3 spawnCoordinates)
+    {
+        // randomly select one of the game tile objects
+        return Instantiate(GroundTile, spawnCoordinates, Quaternion.identity);
+    }
+
     // Spawns the next tile in the path
     public void spawnTile()
     {
-        // instantiate new tile in the next spawn point with the same rotation 
-        GameObject tile = Instantiate(GroundTile, nextSpawnPoint, Quaternion.identity);
-        nextSpawnPoint = tile.transform.GetChild(1).transform.position;
+        // spawns the very first tile
+        if (currentTile == null)
+        {
+            currentTile = newTile(new Vector3(0, 0, 0));
+        }
+        else
+        {
+            currentTile = newTile(new Vector3(currentTile.transform.position.x, currentTile.transform.position.y, currentTile.transform.position.z + 100));
+        }
+
+        allTiles.AddLast(currentTile);
     }
 
+    // Deleted tile at the start of the list
+    public void deleteTile()
+    {
+        GameObject tileToRemove = allTiles.First.Value;
+
+        if (tileToRemove != null)
+        {
+            Destroy(tileToRemove, 2);
+            allTiles.RemoveFirst();
+        }
+    }
+
+
 }
+
