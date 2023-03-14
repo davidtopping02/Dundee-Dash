@@ -4,6 +4,7 @@ using UnityEngine;
 public class GroundGenerator : MonoBehaviour
 {
     public GameObject GroundTile;
+    public GameObject EmptyTile;
     LinkedList<GameObject> allTiles = new LinkedList<GameObject>();
     GameObject currentTile;
 
@@ -11,7 +12,7 @@ public class GroundGenerator : MonoBehaviour
     void Start()
     {
         // spawns the initial tiles for the path
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 5; i++)
         {
             spawnTile();
         }
@@ -29,7 +30,9 @@ public class GroundGenerator : MonoBehaviour
         // spawns the very first tile
         if (currentTile == null)
         {
-            currentTile = newTile(new Vector3(0, 0, 0));
+            //currentTile = newTile(new Vector3(0, 0, 0));
+            currentTile = Instantiate(EmptyTile, new Vector3(0, 0, 0), Quaternion.identity);
+
         }
         else
         {
