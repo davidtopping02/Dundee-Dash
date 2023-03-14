@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        forwardsMovement();
+        resetPlayerAnimation();
 
         if (playerHealth <= 0)
         {
@@ -34,15 +34,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    // this moves the player forward at a constant rate
-    void forwardsMovement()
+    private void resetPlayerAnimation()
     {
-        // continiously moving the player forward
         animator.SetBool("isTripping", false);
         animator.SetBool("isSliding", false);
-        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
     }
-
 
 
     // obstacle detection
@@ -138,7 +134,6 @@ public class PlayerMovement : MonoBehaviour
     // resets the players health after specified time
     IEnumerator resetPlayerHealth(float delay)
     {
-        Debug.Log("here");
         yield return new WaitForSeconds(delay);
         playerHealth = 1;
     }
