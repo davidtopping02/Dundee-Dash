@@ -10,7 +10,7 @@ public class GroundTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 60;
+        moveSpeed = 30;
         groundGenerator = FindObjectOfType<GroundGenerator>();
     }
 

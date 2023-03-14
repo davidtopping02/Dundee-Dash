@@ -63,8 +63,8 @@ public class PlayerMovement : MonoBehaviour
             // get the player's Rigidbody component
             Rigidbody playerRigidbody = GetComponent<Rigidbody>();
 
-            playerRigidbody.AddForce(Vector3.up * 28, ForceMode.Impulse);
-            //playerRigidbody.AddForce(Vector3.down * 10f, ForceMode.Impulse);
+            playerRigidbody.AddForce(Vector3.up * 29f, ForceMode.Impulse);
+            playerRigidbody.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
     }
 
@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
 
             // move the player to the left lane
             currentLane--;
-            transform.position = new Vector3(currentLane * 5f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(currentLane * 3f, transform.position.y, transform.position.z);
         }
         else
         {
@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
 
             // move the player to the left lane
             currentLane++;
-            transform.position = new Vector3(currentLane * 5f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(currentLane * 3f, transform.position.y, transform.position.z);
 
         }
         else
