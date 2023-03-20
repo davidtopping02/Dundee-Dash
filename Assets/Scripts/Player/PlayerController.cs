@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private int currentLane;
     private double playerHealth;
     public int playerScore;
+    public TextMeshProUGUI scoreText;
 
     // Stopwatch for the player's score
     public Stopwatch gameStopWatch;
@@ -48,8 +50,10 @@ public class PlayerController : MonoBehaviour
 
     private void updatePlayerScore()
     {
-        playerScore += Mathf.RoundToInt(gameStopWatch.GetElapsedTime() * 5);
-        //Debug.Log(playerScore);
+        playerScore += Mathf.RoundToInt(gameStopWatch.GetElapsedTime() * 3);
+        scoreText.text = playerScore.ToString();
+
+        Debug.Log(playerScore);
     }
 
     // resets the animations of the player
