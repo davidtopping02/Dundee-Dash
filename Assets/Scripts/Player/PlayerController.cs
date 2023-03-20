@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public int playerScore;
 
     // Stopwatch for the player's score
-    private Stopwatch gameStopWatch;
+    public Stopwatch gameStopWatch;
 
     private void Start()
     {
@@ -26,13 +26,13 @@ public class PlayerController : MonoBehaviour
         moveSpeed = 30;
         animator = player.GetComponentInChildren<Animator>();
 
-
     }
 
     void Update()
     {
         // required if the player 'trips'
         resetPlayerAnimation();
+
 
         updatePlayerScore();
 
@@ -49,12 +49,13 @@ public class PlayerController : MonoBehaviour
     private void updatePlayerScore()
     {
         playerScore += Mathf.RoundToInt(gameStopWatch.GetElapsedTime() * 5);
-        Debug.Log(playerScore);
+        //Debug.Log(playerScore);
     }
 
     // resets the animations of the player
     private void resetPlayerAnimation()
     {
+        animator.SetBool("isRunning", true);
         animator.SetBool("isTripping", false);
         animator.SetBool("isSliding", false);
     }
@@ -101,10 +102,34 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            animator.SetBool("isSliding", true);
-
+            playerSlide();
         }
     }
+
+    // handles the functionality for the player sliding
+    private void playerSlide()
+    {
+
+        // set the slide animation
+        animator.SetBool("isSliding", true);
+
+        // change the capsule collider to the correct height
+        CapsuleCollider capsuleCollider = GetComponent<CapsuleCollider>();
+        capsuleCollider.height = 1.2f;
+        capsuleCollider.center = new Vector3(0, 0.8f, 0.2f);
+
+        // change the capsule collider back to the correct size
+        StartCoroutine(changeCrouchCollider(capsuleCollider));
+    }
+
+    // change the capsule collider to the correct size after a set period of time
+    IEnumerator changeCrouchCollider(CapsuleCollider capsuleCollider)
+    {
+        yield return new WaitForSeconds(0.5f);
+        capsuleCollider.height = 3.5f;
+        capsuleCollider.center = new Vector3(0, 01.75f, 0.2f);
+    }
+
 
     public void moveLeft()
     {
