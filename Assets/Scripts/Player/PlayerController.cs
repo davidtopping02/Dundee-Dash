@@ -52,8 +52,6 @@ public class PlayerController : MonoBehaviour
     {
         playerScore += Mathf.RoundToInt(gameStopWatch.GetElapsedTime() * 3);
         scoreText.text = playerScore.ToString();
-
-        Debug.Log(playerScore);
     }
 
     // resets the animations of the player

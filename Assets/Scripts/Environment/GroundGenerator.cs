@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class GroundGenerator : MonoBehaviour
 {
-    public GameObject GroundTile;
     public GameObject EmptyTile;
     LinkedList<GameObject> allTiles = new LinkedList<GameObject>();
     GameObject currentTile;
+    public GameObject[] tileConfigs;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +20,13 @@ public class GroundGenerator : MonoBehaviour
 
     private GameObject newTile(Vector3 spawnCoordinates)
     {
+
+        // selects random tile from the list
+        int index = Random.Range(0, tileConfigs.Length);
+        GameObject tileToInstantiate = tileConfigs[index];
+
         // randomly select one of the game tile objects
-        return Instantiate(GroundTile, spawnCoordinates, Quaternion.identity);
+        return Instantiate(tileToInstantiate, spawnCoordinates, Quaternion.identity);
     }
 
     // Spawns the next tile in the path
