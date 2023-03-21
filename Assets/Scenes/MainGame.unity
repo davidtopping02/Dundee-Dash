@@ -1414,8 +1414,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae269617e64f9ae42b6caadc82dd9db8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GroundTile: {fileID: 798259883745621214, guid: efe593eab9590fe4b9a4b6ba6e9b1895, type: 3}
   EmptyTile: {fileID: 8009138661606615072, guid: d85b72735732597458e72dcb61d16ded, type: 3}
+  tileConfigs:
+  - {fileID: 798259883745621214, guid: efe593eab9590fe4b9a4b6ba6e9b1895, type: 3}
+  - {fileID: 798259883745621214, guid: 9a624bb1bdf83f74c90879cf411a83e7, type: 3}
+  - {fileID: 798259883745621214, guid: 6781c10451d717149a3dfdc7059bb013, type: 3}
+  - {fileID: 798259883745621214, guid: daf6630a156ac4b4da1127ff10d767af, type: 3}
 --- !u!4 &1323038125
 Transform:
   m_ObjectHideFlags: 0
