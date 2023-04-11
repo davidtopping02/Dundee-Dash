@@ -1,9 +1,13 @@
+// context script for the finite state machine
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // for the singleton functionality
     private static GameManager _instance = null;
-    private State state;
+
+    // for state machine
+    private BaseState currentState;
 
     /**
      * Code for singleton implementation
@@ -26,35 +30,29 @@ public class GameManager : MonoBehaviour
         Destroy(gameObject);
     }
 
+
     /**
      * Code for the game manager functionality
      */
     private void Start()
     {
-        state = new LoadingState();
-        state.OnEnter();
+        currentState = new MainMenuState();
+        currentState.OnEnter();
     }
 
     void Update()
     {
         // On update, call the OnUpdate method of the current state. 
-        HandleNewState(state.OnUpdate(), state);
+        HandleNewState(currentState.OnUpdate(), currentState);
     }
 
-    void FixedUpdate()
-    {
-        // On FixedUpdate, call the OnFixedUpdate method of the current state.
-        HandleNewState(state.OnFixedUpdate(), state);
-    }
-
-    void HandleNewState(State newState, State oldState)
+    void HandleNewState(BaseState newState, BaseState oldState)
     {
         if (newState != oldState)
         {
-            state = newState;
-            state.OnEnter();
+            currentState = newState;
+            currentState.OnEnter();
         }
     }
-
 
 }
