@@ -28,7 +28,7 @@ public class PlayerStats : MonoBehaviour
 
     public void setCurrentScore(int x)
     {
-        currentScore += x;
+        currentScore = x;
     }
 
     public int getCurrentScore()

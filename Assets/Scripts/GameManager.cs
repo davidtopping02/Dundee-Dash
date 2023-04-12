@@ -4,8 +4,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // for the singleton functionality
-    private static GameManager _instance = null;
-    private PlayerStats playerStats;
+    public static GameManager _instance = null;
+    public PlayerStats playerStats;
 
     // for state machine
     private BaseState currentState;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         currentState = new MainMenuState();
-        playerStats = new PlayerStats();
+        playerStats = gameObject.AddComponent<PlayerStats>();
         currentState.OnEnter();
     }
 

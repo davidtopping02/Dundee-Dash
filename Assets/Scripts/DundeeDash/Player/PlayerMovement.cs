@@ -1,83 +1,37 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    // rate of movement through the game
-    public static float moveSpeed;
-
-    // player components
-    public GameObject player;
-    private Animator animator;
+    // fields required for the player movement
+    private GameObject player;
+    private Animator playerAnimator;
     private int currentLane;
-    private double playerHealth;
-    public int playerScore;
-    public TextMeshProUGUI scoreText;
-
-    // Stopwatch for the player's score
-    public Stopwatch gameStopWatch;
 
     private void Start()
     {
-        gameStopWatch = new Stopwatch();
-        playerHealth = 1;
-        playerScore = 0;
+        // init fields to default values
+        player = gameObject;
+        playerAnimator = player.GetComponentInChildren<Animator>();
         currentLane = 0;
-        moveSpeed = 30;
-        animator = player.GetComponentInChildren<Animator>();
-
     }
 
-    void Update()
+    private void Update()
     {
         // required if the player 'trips'
         resetPlayerAnimation();
-
-
-        updatePlayerScore();
-
-        // broadcast player dead
-        if (playerHealth <= 0)
-        {
-            // reset game
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-
-    }
-
-
-    private void updatePlayerScore()
-    {
-        playerScore += Mathf.RoundToInt(gameStopWatch.GetElapsedTime() * 3);
-        scoreText.text = playerScore.ToString();
     }
 
     // resets the animations of the player
     private void resetPlayerAnimation()
     {
-        animator.SetBool("isRunning", true);
-        animator.SetBool("isTripping", false);
-        animator.SetBool("isSliding", false);
+        playerAnimator.SetBool("isRunning", true);
+        playerAnimator.SetBool("isTripping", false);
+        playerAnimator.SetBool("isSliding", false);
     }
 
 
-    // obstacle detection
-    void OnCollisionEnter(Collision targetObj)
-    {
-        if (targetObj.gameObject.tag == "obstacle")
-        {
-            // resets the game when a collision is detected
-            playerHealth -= 1;
-        }
-    }
-
-
-    /*
-     * Helper functions called on swipe events
-     */
-
+    // player jump
     public void jump()
     {
         // check if the player is on the ground
@@ -87,13 +41,12 @@ public class PlayerController : MonoBehaviour
             Rigidbody playerRigidbody = GetComponent<Rigidbody>();
 
             playerRigidbody.AddForce(Vector3.up * 28, ForceMode.Impulse);
-            //playerRigidbody.AddForce(Vector3.down * 10f, ForceMode.Impulse);
         }
     }
 
-    public void slide()
+    // player duck
+    public void duck()
     {
-
         // check if the player is on the ground
         if (transform.position.y > 1)
         {
@@ -108,12 +61,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // handles the functionality for the player sliding
+    // handles the functionality for the player sliding (if the player is already on the ground)
     private void playerSlide()
     {
 
         // set the slide animation
-        animator.SetBool("isSliding", true);
+        playerAnimator.SetBool("isSliding", true);
 
         // change the capsule collider to the correct height
         CapsuleCollider capsuleCollider = GetComponent<CapsuleCollider>();
@@ -138,9 +91,6 @@ public class PlayerController : MonoBehaviour
         // checking the player is not in the left-most lane
         if (currentLane == 0 || currentLane == 1)
         {
-            // reset the player health when moving lanes
-            playerHealth = 1;
-
             // move the player to the left lane
             currentLane--;
             transform.position = new Vector3(currentLane * 5f, transform.position.y, transform.position.z);
@@ -156,8 +106,6 @@ public class PlayerController : MonoBehaviour
         // checking the player is not in the left-most lane
         if (currentLane == -1 || currentLane == 0)
         {
-            // reset the player health when moving lanes
-            playerHealth = 1;
 
             // move the player to the left lane
             currentLane++;
@@ -173,8 +121,7 @@ public class PlayerController : MonoBehaviour
     // animates the players trip and decrements health
     private void playerTrip()
     {
-        playerHealth -= 0.5;
-        animator.SetBool("isTripping", true);
+        playerAnimator.SetBool("isTripping", true);
         StartCoroutine(resetPlayerHealth(1));
     }
 
@@ -182,7 +129,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator resetPlayerHealth(float delay)
     {
         yield return new WaitForSeconds(delay);
-        playerHealth = 1;
     }
+
 
 }
