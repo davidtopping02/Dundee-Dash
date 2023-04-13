@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,12 +9,16 @@ public class PlayerMovement : MonoBehaviour
     private Animator playerAnimator;
     private int currentLane;
 
+    //obstacle collision
+    public UnityEvent obstacleCollision;
+
     private void Start()
     {
         // init fields to default values
         player = gameObject;
         playerAnimator = player.GetComponentInChildren<Animator>();
         currentLane = 0;
+        obstacleCollision = new UnityEvent();
     }
 
     private void Update()
@@ -122,14 +127,15 @@ public class PlayerMovement : MonoBehaviour
     private void playerTrip()
     {
         playerAnimator.SetBool("isTripping", true);
-        StartCoroutine(resetPlayerHealth(1));
+        MainGameEvents.playerTrip.Invoke();
     }
 
-    // resets the players health after specified time
-    IEnumerator resetPlayerHealth(float delay)
+    // obstacle detection
+    void OnCollisionEnter(Collision targetObj)
     {
-        yield return new WaitForSeconds(delay);
+        if (targetObj.gameObject.tag == "obstacle")
+        {
+            MainGameEvents.fullObstacleCollision.Invoke();
+        }
     }
-
-
 }
