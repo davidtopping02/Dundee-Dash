@@ -40,9 +40,9 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.Save();
         }
 
+        // used to quicly reset the high score
         //  PlayerPrefs.SetInt("hiScore", 0);
         //PlayerPrefs.Save();
-        Debug.Log(PlayerPrefs.GetInt("hiScore"));
     }
 
     public void setHealth(float x)

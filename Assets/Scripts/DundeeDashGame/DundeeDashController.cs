@@ -12,6 +12,7 @@ public class DundeeDashController : MonoBehaviour
         stopwatch = gameObject.AddComponent<Stopwatch>();
         MainGameEvents.fullObstacleCollision.AddListener(FullCollision);
         MainGameEvents.playerTrip.AddListener(PlayerTrip);
+        MainGameEvents.quitGame.AddListener(quitGame);
     }
 
     // Update is called once per frame
@@ -53,5 +54,10 @@ public class DundeeDashController : MonoBehaviour
     {
         yield return new WaitForSeconds(1f); // Wait for 1 second
         GameManager._instance.playerStats.setHealth(1);
+    }
+
+    private void quitGame()
+    {
+        MainGameEvents.suddenGameEnd.Invoke();
     }
 }
