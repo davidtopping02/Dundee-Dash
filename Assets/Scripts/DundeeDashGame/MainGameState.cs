@@ -11,6 +11,14 @@ public class MainGameState : BaseState
         // Set the state to change to as itself.
         changedState = this;
         Debug.Log("in main game state");
+
+        MainGameEvents.playerDeath.AddListener(playerDeath);
+
+    }
+
+    private void playerDeath()
+    {
+        changedState = new DeathState();
     }
 
 
