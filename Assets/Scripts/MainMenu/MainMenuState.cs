@@ -34,8 +34,6 @@ public class MainMenuState : BaseState
 
     public void PlayButtonClick()
     {
-
-        Debug.Log("Button clicked!");
         // instantiate a new main game state
         changedState = new MainGameState();
 

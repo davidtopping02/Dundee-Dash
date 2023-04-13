@@ -13,6 +13,7 @@ public class MainGameState : BaseState
         Debug.Log("in main game state");
 
         MainGameEvents.playerDeath.AddListener(playerDeath);
+        MainGameEvents.suddenGameEnd.AddListener(returnToMainMenu);
 
     }
 
@@ -21,6 +22,10 @@ public class MainGameState : BaseState
         changedState = new DeathState();
     }
 
+    private void returnToMainMenu()
+    {
+        changedState = new MainMenuState();
+    }
 
     public override void OnEnter()
     {

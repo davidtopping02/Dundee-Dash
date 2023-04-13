@@ -17,33 +17,35 @@ public class SwipeDetector : MonoBehaviour
 
     void Update()
     {
-        // checks for user input each frame
-        foreach (Touch touch in Input.touches)
+        if (Time.timeScale > 0)
         {
-            if (touch.phase == TouchPhase.Began)
+            // checks for user input each frame
+            foreach (Touch touch in Input.touches)
             {
-                fingerUp = touch.position;
-                fingerDown = touch.position;
-            }
+                if (touch.phase == TouchPhase.Began)
+                {
+                    fingerUp = touch.position;
+                    fingerDown = touch.position;
+                }
 
-            //Detects Swipe while finger is still moving
-            if (touch.phase == TouchPhase.Moved)
-            {
-                if (!detectSwipeOnlyAfterRelease)
+                //Detects Swipe while finger is still moving
+                if (touch.phase == TouchPhase.Moved)
+                {
+                    if (!detectSwipeOnlyAfterRelease)
+                    {
+                        fingerDown = touch.position;
+                        checkSwipe();
+                    }
+                }
+
+                //Detects swipe after finger is released
+                if (touch.phase == TouchPhase.Ended)
                 {
                     fingerDown = touch.position;
                     checkSwipe();
                 }
             }
-
-            //Detects swipe after finger is released
-            if (touch.phase == TouchPhase.Ended)
-            {
-                fingerDown = touch.position;
-                checkSwipe();
-            }
         }
-
     }
 
     void checkSwipe()
