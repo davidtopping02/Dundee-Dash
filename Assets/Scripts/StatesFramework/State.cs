@@ -1,5 +1,8 @@
+using UnityEngine;
+
 public abstract class BaseState
 {
+    protected MonoBehaviour monoBehaviour;
 
     // On Enter should implement any one-off logic that needs to happen when the state is entered.
     public abstract void OnEnter();

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager _instance = null;
     public PlayerStats playerStats;
 
+
     // for state machine
     private BaseState currentState;
 

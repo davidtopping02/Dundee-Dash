@@ -11,10 +11,4 @@ public class MainMenuUI : MonoBehaviour
     {
         highScoreText.text = "High Score: " + GameManager._instance.playerStats.getHighScore();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

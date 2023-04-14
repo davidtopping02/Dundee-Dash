@@ -14,23 +14,12 @@ public class MainMenuState : BaseState
     public override void OnEnter()
     {
         // Load the new scene asynchronously.
-        SceneManager.LoadSceneAsync("MainMenu");
-
-        // Add a listener to the sceneLoaded event.
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // Unsubscribe from the sceneLoaded event.
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.LoadScene("MainMenu");
 
         // add onclick functionality
         MainMenuEvents.playButtonClicked.AddListener(PlayButtonClick);
-
     }
+
 
     public void PlayButtonClick()
     {
