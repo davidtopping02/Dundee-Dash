@@ -9,7 +9,7 @@ public class MainMenuUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        highScoreText.text = "High Score: " + PlayerPrefs.GetInt("hiScore").ToString();
+        highScoreText.text = "High Score: " + GameManager._instance.playerStats.getHighScore();
     }
 
     // Update is called once per frame

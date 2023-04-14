@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
         currentState = new MainMenuState();
         playerStats = gameObject.AddComponent<PlayerStats>();
         currentState.OnEnter();
+
+        // used to quicly reset the high score
     }
 
     void Update()
