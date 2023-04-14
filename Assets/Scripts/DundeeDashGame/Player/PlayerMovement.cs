@@ -17,8 +17,10 @@ public class PlayerMovement : MonoBehaviour
         // init fields to default values
         player = gameObject;
         playerAnimator = player.GetComponentInChildren<Animator>();
+        playerAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
         currentLane = 0;
         obstacleCollision = new UnityEvent();
+        MainGameEvents.playerFall.AddListener(playerDeath);
     }
 
     private void Update()
@@ -33,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
         playerAnimator.SetBool("isRunning", true);
         playerAnimator.SetBool("isTripping", false);
         playerAnimator.SetBool("isSliding", false);
+    }
+
+    private void playerDeath()
+    {
+        playerAnimator.SetBool("isDead", true);
     }
 
 

@@ -65,7 +65,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 3.5
   m_Direction: 1
-  m_Center: {x: 0, y: 1.73, z: 0.2}
+  m_Center: {x: 0, y: 1.7, z: 0.2}
 --- !u!114 &4646492281311248195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +91,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3538b4b5a5c1c9b478854e0071f838e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstacleCollision:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2940742109389562020
 PrefabInstance:
   m_ObjectHideFlags: 0

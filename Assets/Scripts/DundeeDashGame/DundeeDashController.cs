@@ -27,9 +27,18 @@ public class DundeeDashController : MonoBehaviour
     {
         if (GameManager._instance.playerStats.getHealth() <= 0)
         {
-            MainGameEvents.playerDeath.Invoke();
-            Destroy(gameObject);
+            MainGameEvents.playerFall.Invoke();
+            StartCoroutine(WaitTwoSeconds());
         }
+    }
+
+    IEnumerator WaitTwoSeconds()
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(1.5f);
+        Time.timeScale = 1f;
+        MainGameEvents.playerDeath.Invoke();
+        Destroy(gameObject);
     }
 
     private void updatePlayerScore()
