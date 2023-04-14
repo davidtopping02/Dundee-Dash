@@ -5,44 +5,41 @@ public class PlayerStats : MonoBehaviour
     private float health;
     private int currentScore;
     private int highScore;
+    private bool highScoreSet;
 
     // Start is called before the first frame update
     void Start()
     {
         health = 1;
         currentScore = 0;
-
-        //implement this functionality
-        highScore = 0;
+        highScore = PlayerPrefs.GetInt("hiScore");
+        highScoreSet = false;
     }
 
     public void Reset()
     {
         health = 1;
         currentScore = 0;
+        highScoreSet = false;
     }
 
     public void saveHighScore()
     {
+
         if (PlayerPrefs.HasKey("hiScore"))
         {
             if (currentScore > PlayerPrefs.GetInt("hiScore"))
             {
-                highScore = currentScore;
-                PlayerPrefs.SetInt("hiScore", highScore);
-                PlayerPrefs.Save();
+                setHighScore(currentScore);
+                highScoreSet = true;
             }
         }
         else
         {
-            highScore = currentScore;
-            PlayerPrefs.SetInt("hiScore", highScore);
-            PlayerPrefs.Save();
+            setHighScore(currentScore);
         }
 
-        // used to quicly reset the high score
-        //  PlayerPrefs.SetInt("hiScore", 0);
-        //PlayerPrefs.Save();
+        //setHighScore(0);
     }
 
     public void setHealth(float x)
@@ -68,5 +65,17 @@ public class PlayerStats : MonoBehaviour
     public void setHighScore(int x)
     {
         highScore = x;
+        PlayerPrefs.SetInt("hiScore", x);
+        PlayerPrefs.Save();
+    }
+
+    public int getHighScore()
+    {
+        return highScore;
+    }
+
+    public bool isHighScoreSet()
+    {
+        return highScoreSet;
     }
 }

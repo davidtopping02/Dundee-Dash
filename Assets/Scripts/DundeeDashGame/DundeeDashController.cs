@@ -13,6 +13,7 @@ public class DundeeDashController : MonoBehaviour
         MainGameEvents.fullObstacleCollision.AddListener(FullCollision);
         MainGameEvents.playerTrip.AddListener(PlayerTrip);
         MainGameEvents.quitGame.AddListener(quitGame);
+        GameManager._instance.playerStats.Reset();
     }
 
     // Update is called once per frame
@@ -27,6 +28,7 @@ public class DundeeDashController : MonoBehaviour
         if (GameManager._instance.playerStats.getHealth() <= 0)
         {
             MainGameEvents.playerDeath.Invoke();
+            Destroy(gameObject);
         }
     }
 

@@ -15,10 +15,6 @@ public class DeathState : BaseState
     {
         // save player high score
         GameManager._instance.playerStats.saveHighScore();
-        GameManager._instance.playerStats.Reset();
-
-        // reset all other stats
-
 
         // Load the new scene asynchronously.
         SceneManager.LoadSceneAsync("DeathScene");
