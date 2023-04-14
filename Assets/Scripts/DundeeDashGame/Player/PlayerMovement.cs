@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
         // init fields to default values
         player = gameObject;
         playerAnimator = player.GetComponentInChildren<Animator>();
-        playerAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
         currentLane = 0;
         obstacleCollision = new UnityEvent();
         MainGameEvents.playerFall.AddListener(playerDeath);
