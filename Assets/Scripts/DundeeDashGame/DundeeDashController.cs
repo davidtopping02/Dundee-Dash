@@ -34,9 +34,7 @@ public class DundeeDashController : MonoBehaviour
 
     IEnumerator WaitTwoSeconds()
     {
-        Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(1.5f);
-        Time.timeScale = 1f;
         MainGameEvents.playerDeath.Invoke();
         Destroy(gameObject);
     }
@@ -52,6 +50,7 @@ public class DundeeDashController : MonoBehaviour
     private void FullCollision()
     {
         GameManager._instance.playerStats.setHealth(-1);
+        stopwatch.Pause();
     }
 
     private void PlayerTrip()

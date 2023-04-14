@@ -12,6 +12,13 @@ public class GroundTile : MonoBehaviour
     {
         moveSpeed = 60;
         groundGenerator = FindObjectOfType<GroundGenerator>();
+        MainGameEvents.fullObstacleCollision.AddListener(stopMovement);
+
+    }
+
+    private void stopMovement()
+    {
+        moveSpeed = 0;
     }
 
     // moves the tile back at a constant rate
