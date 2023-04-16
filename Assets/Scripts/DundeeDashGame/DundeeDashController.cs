@@ -5,15 +5,18 @@ using UnityEngine;
 public class DundeeDashController : MonoBehaviour
 {
     private Stopwatch stopwatch;
+    public static float moveSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
+        moveSpeed = 35;
         stopwatch = gameObject.AddComponent<Stopwatch>();
         MainGameEvents.fullObstacleCollision.AddListener(FullCollision);
         MainGameEvents.playerTrip.AddListener(PlayerTrip);
         MainGameEvents.quitGame.AddListener(quitGame);
         GameManager._instance.playerStats.Reset();
+
     }
 
     // Update is called once per frame
@@ -21,6 +24,28 @@ public class DundeeDashController : MonoBehaviour
     {
         checkForDeath();
         updatePlayerScore();
+        updateMoveSpeed();
+    }
+
+    private void updateMoveSpeed()
+    {
+        // this factor takes 3mins to reach full speed
+        float acceleration = 0.1389f;
+
+        if (moveSpeed > 0)
+        {
+            // Increase the move speed based on the elapsed time
+            moveSpeed += acceleration * Time.deltaTime;
+            int maxSpeed = 60;
+
+            // Cap the move speed at the maximum value
+            if (moveSpeed > maxSpeed)
+            {
+                moveSpeed = maxSpeed;
+            }
+
+        }
+
     }
 
     private void checkForDeath()
@@ -49,6 +74,7 @@ public class DundeeDashController : MonoBehaviour
 
     private void FullCollision()
     {
+        moveSpeed = 0;
         GameManager._instance.playerStats.setHealth(-1);
         stopwatch.Pause();
     }

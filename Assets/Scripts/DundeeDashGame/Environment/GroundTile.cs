@@ -2,29 +2,32 @@ using UnityEngine;
 
 public class GroundTile : MonoBehaviour
 {
-
     GroundGenerator groundGenerator;
-    int moveSpeed;
+    float moveSpeed;
+    float acceleration;
+    float maxSpeed;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 40;
         groundGenerator = FindObjectOfType<GroundGenerator>();
-        MainGameEvents.fullObstacleCollision.AddListener(stopMovement);
 
     }
-
-    private void stopMovement()
-    {
-        moveSpeed = 0;
-    }
-
     // moves the tile back at a constant rate
     private void Update()
     {
-        transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
+        // Increase the move speed based on the elapsed time
+        moveSpeed += acceleration * Time.deltaTime;
+
+        // Cap the move speed at the maximum value
+        if (moveSpeed > maxSpeed)
+        {
+            moveSpeed = maxSpeed;
+        }
+
+        // Move the tile
+        transform.Translate(Vector3.back * DundeeDashController.moveSpeed * Time.deltaTime);
     }
 
 
