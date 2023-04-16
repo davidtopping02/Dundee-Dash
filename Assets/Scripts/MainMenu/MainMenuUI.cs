@@ -6,6 +6,7 @@ public class MainMenuUI : MonoBehaviour
     public TextMeshProUGUI highScoreText;
 
 
+
     // Start is called before the first frame update
     void Start()
     {

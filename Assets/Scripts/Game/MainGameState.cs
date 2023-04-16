@@ -31,6 +31,8 @@ public class MainGameState : BaseState
     {
         // Load the new scene asynchronously.
         SceneManager.LoadScene("MainGame");
+        GameManager._instance.GetComponent<AudioManager>().playGameMusic();
+
 
     }
 

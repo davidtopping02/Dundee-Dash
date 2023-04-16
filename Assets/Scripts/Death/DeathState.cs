@@ -15,6 +15,9 @@ public class DeathState : BaseState
     {
         // save player high score
         GameManager._instance.playerStats.saveHighScore();
+        GameManager._instance.GetComponent<AudioManager>().stopMusic();
+
+
 
         // Load the new scene asynchronously.
         SceneManager.LoadSceneAsync("DeathScene");
