@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
             // get the player's Rigidbody component
             Rigidbody playerRigidbody = GetComponent<Rigidbody>();
 
-            playerRigidbody.AddForce(Vector3.up * 28, ForceMode.Impulse);
+            playerRigidbody.AddForce(Vector3.up * 32, ForceMode.Impulse);
         }
     }
 
