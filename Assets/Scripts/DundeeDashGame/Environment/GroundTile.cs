@@ -10,7 +10,7 @@ public class GroundTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 60;
+        moveSpeed = 40;
         groundGenerator = FindObjectOfType<GroundGenerator>();
         MainGameEvents.fullObstacleCollision.AddListener(stopMovement);
 
