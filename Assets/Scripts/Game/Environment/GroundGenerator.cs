@@ -23,7 +23,6 @@ public class GroundGenerator : MonoBehaviour
 
         // selects random tile from the list
         int index = Random.Range(0, tileConfigs.Length);
-        Debug.Log(index);
         GameObject tileToInstantiate = tileConfigs[index];
 
         // randomly select one of the game tile objects
