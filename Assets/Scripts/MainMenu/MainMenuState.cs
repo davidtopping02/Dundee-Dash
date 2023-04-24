@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuState : BaseState
 {
-    BaseState changedState;
+    // BaseState changedState;
 
     public MainMenuState() : base()
     {

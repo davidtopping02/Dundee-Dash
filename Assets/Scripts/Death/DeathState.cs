@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class DeathState : BaseState
 {
-    BaseState changedState;
+    //BaseState changedState;
 
     public DeathState() : base()
     {

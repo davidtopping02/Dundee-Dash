@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class MainGameState : BaseState
 {
     // The state to change to when this state is done.
-    private BaseState changedState;
+    //private BaseState changedState;
 
     public MainGameState() : base()
     {

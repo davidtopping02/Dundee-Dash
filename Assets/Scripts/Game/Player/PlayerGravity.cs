@@ -1,6 +1,7 @@
 using UnityEngine;
 
 /**
+ * Inspiration taken from the following forum
  * https://forum.unity.com/threads/why-does-rigidbody-3d-not-have-a-gravity-scale.440415/
  */
 [RequireComponent(typeof(Rigidbody))]
