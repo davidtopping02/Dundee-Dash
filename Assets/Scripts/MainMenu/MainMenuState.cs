@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuState : BaseState
 {
-    BaseState changedState;
+    // BaseState changedState;
 
     public MainMenuState() : base()
     {
@@ -15,6 +15,9 @@ public class MainMenuState : BaseState
     {
         // Load the new scene asynchronously.
         SceneManager.LoadScene("MainMenu");
+
+        GameManager._instance.GetComponent<AudioManager>().playMainMenuMusic();
+
 
         // add onclick functionality
         MainMenuEvents.playButtonClicked.AddListener(PlayButtonClick);

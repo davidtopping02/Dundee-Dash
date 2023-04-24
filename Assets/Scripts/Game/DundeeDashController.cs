@@ -6,6 +6,7 @@ public class DundeeDashController : MonoBehaviour
 {
     private Stopwatch stopwatch;
     public static float moveSpeed;
+    bool playerDead;
 
     // Start is called before the first frame update
     void Start()
@@ -16,15 +17,19 @@ public class DundeeDashController : MonoBehaviour
         MainGameEvents.playerTrip.AddListener(PlayerTrip);
         MainGameEvents.quitGame.AddListener(quitGame);
         GameManager._instance.playerStats.Reset();
+        playerDead = false;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        checkForDeath();
-        updatePlayerScore();
-        updateMoveSpeed();
+        if (!playerDead)
+        {
+            checkForDeath();
+            updatePlayerScore();
+            updateMoveSpeed();
+        }
     }
 
     private void updateMoveSpeed()
@@ -52,7 +57,9 @@ public class DundeeDashController : MonoBehaviour
     {
         if (GameManager._instance.playerStats.getHealth() <= 0)
         {
+            playerDead = true;
             MainGameEvents.playerFall.Invoke();
+            GameManager._instance.GetComponent<AudioManager>().jumpSound();
             StartCoroutine(WaitTwoSeconds());
         }
     }
