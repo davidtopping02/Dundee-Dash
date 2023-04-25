@@ -18,6 +18,7 @@ public class GroundTile : MonoBehaviour
 
         // Move the tile
         transform.Translate(Vector3.back * DundeeDashController.moveSpeed * Time.deltaTime);
+
     }
 
 

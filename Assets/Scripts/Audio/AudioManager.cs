@@ -9,12 +9,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip duck;
     public AudioClip death;
 
-    void Start()
-    {
-        // Set the loop property of the musicSource to true
-        musicSource.loop = true;
-    }
-
     public void playMainMenuMusic()
     {
         stopMusic();
@@ -24,11 +18,14 @@ public class AudioManager : MonoBehaviour
     public void playGameMusic()
     {
         stopMusic();
-        musicSource.PlayOneShot(gameMusic);
+        musicSource.clip = gameMusic;
+        musicSource.loop = true;
+        musicSource.Play();
     }
 
     public void stopMusic()
     {
+        musicSource.loop = false;
         musicSource.Stop();
     }
 
