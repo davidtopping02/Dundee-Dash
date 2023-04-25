@@ -26,6 +26,7 @@ public class PlayerStats : MonoBehaviour
     public void saveHighScore()
     {
 
+
         if (PlayerPrefs.HasKey("hiScore"))
         {
             if (currentScore > PlayerPrefs.GetInt("hiScore"))
@@ -39,6 +40,7 @@ public class PlayerStats : MonoBehaviour
             setHighScore(currentScore);
         }
 
+        StartCoroutine(GameManager._instance.globalLeaderBoard.SubmitScore(currentScore));
         //setHighScore(0);
     }
 

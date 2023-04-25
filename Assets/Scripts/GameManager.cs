@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     // for the singleton functionality
     public static GameManager _instance = null;
     public PlayerStats playerStats;
+    public LeaderBoard globalLeaderBoard;
 
 
     // for state machine
@@ -40,10 +41,12 @@ public class GameManager : MonoBehaviour
     {
         currentState = new MainMenuState();
         playerStats = gameObject.AddComponent<PlayerStats>();
+        globalLeaderBoard = gameObject.AddComponent<LeaderBoard>();
         currentState.OnEnter();
 
         // used to quicly reset the high score
     }
+
 
     void Update()
     {
