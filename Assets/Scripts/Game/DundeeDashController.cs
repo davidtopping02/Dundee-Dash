@@ -34,23 +34,15 @@ public class DundeeDashController : MonoBehaviour
 
     private void updateMoveSpeed()
     {
-        // this factor takes 3mins to reach full speed
-        float acceleration = 0.1389f;
+        float timeToMaxSpeed = 30f;
+        float maxSpeed = 60;
+        float acceleration = 2 * maxSpeed / (timeToMaxSpeed * timeToMaxSpeed);
 
-        if (moveSpeed > 0)
+        if (moveSpeed < maxSpeed)
         {
-            // Increase the move speed based on the elapsed time
             moveSpeed += acceleration * Time.deltaTime;
-            int maxSpeed = 60;
-
-            // Cap the move speed at the maximum value
-            if (moveSpeed > maxSpeed)
-            {
-                moveSpeed = maxSpeed;
-            }
-
+            moveSpeed = Mathf.Min(moveSpeed, maxSpeed);
         }
-
     }
 
     private void checkForDeath()

@@ -4,7 +4,7 @@ using UnityEngine;
 public class GroundGenerator : MonoBehaviour
 {
     public GameObject EmptyTile;
-    LinkedList<GameObject> allTiles = new LinkedList<GameObject>();
+    LinkedList<GameObject> allTiles = new();
     GameObject currentTile;
     public GameObject[] tileConfigs;
 
@@ -23,7 +23,6 @@ public class GroundGenerator : MonoBehaviour
 
         // selects random tile from the list
         int index = Random.Range(0, tileConfigs.Length);
-        Debug.Log(index);
         GameObject tileToInstantiate = tileConfigs[index];
 
         // randomly select one of the game tile objects
@@ -36,7 +35,6 @@ public class GroundGenerator : MonoBehaviour
         // spawns the very first tile
         if (currentTile == null)
         {
-            //currentTile = newTile(new Vector3(0, 0, 0));
             currentTile = Instantiate(EmptyTile, new Vector3(0, 0, 0), Quaternion.identity);
 
         }
