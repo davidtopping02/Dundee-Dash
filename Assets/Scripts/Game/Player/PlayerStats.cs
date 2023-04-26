@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
@@ -6,6 +7,7 @@ public class PlayerStats : MonoBehaviour
     private int currentScore;
     private int highScore;
     private bool highScoreSet;
+    private string nickName;
 
     // Start is called before the first frame update
     void Start()
@@ -13,6 +15,8 @@ public class PlayerStats : MonoBehaviour
         health = 1;
         currentScore = 0;
         highScore = PlayerPrefs.GetInt("hiScore");
+        //nickName = PlayerPrefs.GetString("nickName");
+        setNickName("DavyT");
         highScoreSet = false;
     }
 
@@ -23,9 +27,21 @@ public class PlayerStats : MonoBehaviour
         highScoreSet = false;
     }
 
+    public void setNickName(string newNickName)
+    {
+        nickName = newNickName;
+        PlayerPrefs.SetString("nickName", nickName);
+        StartCoroutine(testNicname());
+    }
+
+    public IEnumerator testNicname()
+    {
+        yield return new WaitForSeconds(2f);
+        StartCoroutine(GameManager._instance.globalLeaderBoard.setPlayerName(nickName));
+    }
+
     public void saveHighScore()
     {
-
         if (PlayerPrefs.HasKey("hiScore"))
         {
             if (currentScore > PlayerPrefs.GetInt("hiScore"))
@@ -39,7 +55,8 @@ public class PlayerStats : MonoBehaviour
             setHighScore(currentScore);
         }
 
-        //setHighScore(0);
+        StartCoroutine(GameManager._instance.globalLeaderBoard.SubmitScore(currentScore));
+        // setHighScore(0);
     }
 
     public void setHealth(float x)

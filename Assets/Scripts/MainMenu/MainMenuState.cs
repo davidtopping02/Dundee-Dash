@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuState : BaseState
 {
-    // BaseState changedState;
-
     public MainMenuState() : base()
     {
         changedState = this;
@@ -13,16 +11,16 @@ public class MainMenuState : BaseState
 
     public override void OnEnter()
     {
+        GameManager._instance.globalLeaderBoard.loginToOnlineServices();
+
         // Load the new scene asynchronously.
         SceneManager.LoadScene("MainMenu");
 
         GameManager._instance.GetComponent<AudioManager>().playMainMenuMusic();
 
-
         // add onclick functionality
         MainMenuEvents.playButtonClicked.AddListener(PlayButtonClick);
     }
-
 
     public void PlayButtonClick()
     {
@@ -35,4 +33,5 @@ public class MainMenuState : BaseState
     {
         return changedState;
     }
+
 }
