@@ -23,6 +23,29 @@ public class LeaderBoard : MonoBehaviour
         StartCoroutine(LoginRoutine());
     }
 
+    public IEnumerator setPlayerName(string playerName)
+    {
+
+        bool done = false;
+
+        LootLockerSDKManager.SetPlayerName(playerName, (response) =>
+        {
+            if (response.success)
+            {
+                Debug.Log("succesfully set the player name");
+                done = true;
+            }
+            else
+            {
+                Debug.Log("name change failed" + response.Error);
+            }
+            done = true;
+        });
+
+        // Wait until the login is done
+        yield return new WaitWhile(() => done == false);
+    }
+
     // This coroutine logs in the player to the LootLocker server and saves the player's ID as a PlayerPrefs
     public IEnumerator LoginRoutine()
     {
