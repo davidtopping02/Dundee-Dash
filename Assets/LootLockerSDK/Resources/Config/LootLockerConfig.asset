@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LootLockerConfig
   m_EditorClassIdentifier: 
   apiKey: dev_0c8b3c3b2962463baaa2cae0c8bad838
-  token: 3cbca34317035b7382d8e2d85f44aae48bc5c5dd
+  token: 0bb9aca7cf4f78ef68c33a2bd58d4be67a5d6258
   adminToken: 
   refreshToken: 
   domainKey: xb82d4na
@@ -28,5 +28,5 @@ MonoBehaviour:
   userUrl: https://xb82d4na.api.lootlocker.io/game
   baseUrl: https://xb82d4na.api.lootlocker.io
   clientSideRequestTimeOut: 5
-  currentDebugLevel: 3
+  currentDebugLevel: 0
   allowTokenRefresh: 1
