@@ -12,4 +12,5 @@ public class PlayButtonScript : MonoBehaviour
 public static class MainMenuEvents
 {
     public static UnityEvent playButtonClicked = new UnityEvent();
+    public static UnityEvent leaderBoardButtonClicked = new UnityEvent();
 }

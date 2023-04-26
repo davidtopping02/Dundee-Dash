@@ -14,8 +14,11 @@ public class MainMenuUI : MonoBehaviour
     {
         highScoreText.text = "High Score: " + GameManager._instance.playerStats.getHighScore();
         UpdateLeaderboard();
+    }
 
-        InvokeRepeating("UpdateLeaderboard", 1f, 10f);
+    private void Update()
+    {
+        UpdateLeaderboard();
     }
 
     private void UpdateLeaderboard()
