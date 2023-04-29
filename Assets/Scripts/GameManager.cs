@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
     }
 
     private void OnDestroy()
@@ -44,7 +46,6 @@ public class GameManager : MonoBehaviour
         playerStats = gameObject.AddComponent<PlayerStats>();
         currentState.OnEnter();
 
-        // used to quicly reset the high score
     }
 
 

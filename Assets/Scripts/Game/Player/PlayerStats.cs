@@ -15,9 +15,9 @@ public class PlayerStats : MonoBehaviour
         health = 1;
         currentScore = 0;
         highScore = PlayerPrefs.GetInt("hiScore");
-        //nickName = PlayerPrefs.GetString("nickName");
-        setNickName("DavyT");
+        nickName = PlayerPrefs.GetString("nickName");
         highScoreSet = false;
+
     }
 
     public void Reset()
@@ -27,17 +27,21 @@ public class PlayerStats : MonoBehaviour
         highScoreSet = false;
     }
 
+    public string getNickName()
+    {
+        return nickName;
+    }
+
     public void setNickName(string newNickName)
     {
         nickName = newNickName;
         PlayerPrefs.SetString("nickName", nickName);
-        StartCoroutine(testNicname());
+        StartCoroutine(changeLootlockerName());
     }
 
-    public IEnumerator testNicname()
+    public IEnumerator changeLootlockerName()
     {
-        yield return new WaitForSeconds(2f);
-        StartCoroutine(GameManager._instance.globalLeaderBoard.setPlayerName(nickName));
+        yield return GameManager._instance.globalLeaderBoard.setPlayerName(nickName);
     }
 
     public void saveHighScore()
