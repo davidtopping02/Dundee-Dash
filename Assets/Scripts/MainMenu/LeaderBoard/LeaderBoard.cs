@@ -75,6 +75,13 @@ public class LeaderBoard : MonoBehaviour
         yield return new WaitWhile(() => done == false);
 
         yield return getTopHighScores();
+
+        // Call getTopHighScores() every 10 seconds
+        while (true)
+        {
+            yield return new WaitForSeconds(10);
+            yield return getTopHighScores();
+        }
     }
 
 
