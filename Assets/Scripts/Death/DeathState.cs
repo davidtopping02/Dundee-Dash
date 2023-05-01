@@ -15,6 +15,8 @@ public class DeathState : BaseState
     {
         // save player high score
         GameManager._instance.playerStats.saveHighScore();
+        GameManager._instance.playerStats.saveCoins();
+        Debug.Log(PlayerPrefs.GetInt("coins"));
         GameManager._instance.GetComponent<AudioManager>().stopMusic();
 
 

@@ -16,6 +16,7 @@ public class DundeeDashController : MonoBehaviour
         MainGameEvents.fullObstacleCollision.AddListener(FullCollision);
         MainGameEvents.playerTrip.AddListener(PlayerTrip);
         MainGameEvents.quitGame.AddListener(quitGame);
+        MainGameEvents.coinCollected.AddListener(incrementCoins);
         GameManager._instance.playerStats.Reset();
         playerDead = false;
 
@@ -94,5 +95,10 @@ public class DundeeDashController : MonoBehaviour
     private void quitGame()
     {
         MainGameEvents.suddenGameEnd.Invoke();
+    }
+
+    private void incrementCoins()
+    {
+        GameManager._instance.playerStats.addCoin();
     }
 }
