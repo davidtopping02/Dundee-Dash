@@ -50,6 +50,7 @@ public class DundeeDashController : MonoBehaviour
     {
         if (GameManager._instance.playerStats.getHealth() <= 0)
         {
+            moveSpeed = 0;
             playerDead = true;
             MainGameEvents.playerFall.Invoke();
             GameManager._instance.GetComponent<AudioManager>().jumpSound();
