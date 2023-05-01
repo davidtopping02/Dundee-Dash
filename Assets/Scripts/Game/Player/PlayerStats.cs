@@ -8,10 +8,12 @@ public class PlayerStats : MonoBehaviour
     private int highScore;
     private bool highScoreSet;
     private string nickName;
+    private int coinsCollected;
 
     // Start is called before the first frame update
     void Start()
     {
+        coinsCollected = 0;
         health = 1;
         currentScore = 0;
         highScore = PlayerPrefs.GetInt("hiScore");
@@ -24,7 +26,18 @@ public class PlayerStats : MonoBehaviour
     {
         health = 1;
         currentScore = 0;
+        coinsCollected = 0;
         highScoreSet = false;
+    }
+
+    public void addCoin()
+    {
+        coinsCollected++;
+    }
+
+    public int getCoins()
+    {
+        return coinsCollected;
     }
 
     public string getNickName()
@@ -61,6 +74,12 @@ public class PlayerStats : MonoBehaviour
 
         StartCoroutine(GameManager._instance.globalLeaderBoard.SubmitScore(currentScore));
         // setHighScore(0);
+    }
+
+    public void saveCoins()
+    {
+        PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt("coins") + coinsCollected);
+        PlayerPrefs.Save();
     }
 
     public void setHealth(float x)

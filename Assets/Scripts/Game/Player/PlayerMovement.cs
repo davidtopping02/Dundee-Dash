@@ -144,4 +144,14 @@ public class PlayerMovement : MonoBehaviour
             MainGameEvents.fullObstacleCollision.Invoke();
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "coin")
+        {
+            MainGameEvents.coinCollected.Invoke();
+            Debug.Log("coin collided");
+        }
+    }
+
 }

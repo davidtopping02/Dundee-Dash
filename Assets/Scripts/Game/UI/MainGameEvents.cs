@@ -8,5 +8,6 @@ public static class MainGameEvents
     public static UnityEvent playerDeath = new UnityEvent();
     public static UnityEvent quitGame = new UnityEvent();
     public static UnityEvent suddenGameEnd = new UnityEvent();
+    public static UnityEvent coinCollected = new UnityEvent();
 
 }
