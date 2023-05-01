@@ -35,7 +35,7 @@ public class DundeeDashController : MonoBehaviour
 
     private void updateMoveSpeed()
     {
-        float timeToMaxSpeed = 30f;
+        float timeToMaxSpeed = 15f;
         float maxSpeed = 60;
         float acceleration = 2 * maxSpeed / (timeToMaxSpeed * timeToMaxSpeed);
 
