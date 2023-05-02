@@ -35,7 +35,7 @@ public class DundeeDashController : MonoBehaviour
 
     private void updateMoveSpeed()
     {
-        float timeToMaxSpeed = 15f;
+        float timeToMaxSpeed = 20f;
         float maxSpeed = 60;
         float acceleration = 2 * maxSpeed / (timeToMaxSpeed * timeToMaxSpeed);
 
@@ -51,6 +51,10 @@ public class DundeeDashController : MonoBehaviour
         if (GameManager._instance.playerStats.getHealth() <= 0)
         {
             moveSpeed = 0;
+
+            //disable controls
+            MainGameEvents.pauseControlls.Invoke();
+
             playerDead = true;
             MainGameEvents.playerFall.Invoke();
             GameManager._instance.GetComponent<AudioManager>().jumpSound();

@@ -70,6 +70,7 @@ public class PlayerStats : MonoBehaviour
         else
         {
             setHighScore(currentScore);
+            highScoreSet = true;
         }
 
         StartCoroutine(GameManager._instance.globalLeaderBoard.SubmitScore(currentScore));
