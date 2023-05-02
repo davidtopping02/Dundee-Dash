@@ -13,11 +13,32 @@ public class SwipeDetector : MonoBehaviour
     private Vector2 fingerUp;
     public float SWIPE_THRESHOLD = 10f;
     public bool detectSwipeOnlyAfterRelease = true;
+    public bool controllsEnabled;
+
+    private void Start()
+    {
+        controllsEnabled = true;
+        MainGameEvents.pauseControlls.AddListener(pauseControls);
+        MainGameEvents.unPauseControlls.AddListener(unpauseControlls);
+    }
+
+
+    private void pauseControls()
+    {
+        controllsEnabled = false;
+    }
+
+    private void unpauseControlls()
+    {
+        controllsEnabled = true;
+    }
+
 
 
     void Update()
     {
-        if (Time.timeScale > 0)
+
+        if (controllsEnabled)
         {
             // checks for user input each frame
             foreach (Touch touch in Input.touches)

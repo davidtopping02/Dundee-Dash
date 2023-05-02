@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
         playerStats = gameObject.AddComponent<PlayerStats>();
         currentState.OnEnter();
 
+        //PlayerPrefs.DeleteAll();
+
     }
 
 

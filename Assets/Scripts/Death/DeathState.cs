@@ -13,6 +13,7 @@ public class DeathState : BaseState
 
     public override void OnEnter()
     {
+
         // save player high score
         GameManager._instance.playerStats.saveHighScore();
         GameManager._instance.playerStats.saveCoins();

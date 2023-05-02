@@ -9,5 +9,7 @@ public static class MainGameEvents
     public static UnityEvent quitGame = new UnityEvent();
     public static UnityEvent suddenGameEnd = new UnityEvent();
     public static UnityEvent coinCollected = new UnityEvent();
-
+    public static UnityEvent firstTimePlay = new UnityEvent();
+    public static UnityEvent pauseControlls = new UnityEvent();
+    public static UnityEvent unPauseControlls = new UnityEvent();
 }

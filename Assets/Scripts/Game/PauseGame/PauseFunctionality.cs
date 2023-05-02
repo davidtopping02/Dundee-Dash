@@ -9,6 +9,7 @@ public class PauseFunctionality : MonoBehaviour
     {
         Debug.Log("paused");
         Time.timeScale = 0;
+        MainGameEvents.pauseControlls.Invoke();
         pauseScreen.gameObject.SetActive(true);
 
     }
@@ -17,6 +18,7 @@ public class PauseFunctionality : MonoBehaviour
     {
         Debug.Log("resumed");
         Time.timeScale = 1;
+        MainGameEvents.unPauseControlls.Invoke();
         pauseScreen.gameObject.SetActive(false);
     }
 
