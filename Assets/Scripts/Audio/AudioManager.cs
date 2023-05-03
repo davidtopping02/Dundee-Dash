@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip mainMenu;
     public AudioClip gameMusic;
     public AudioClip jump;
-    public AudioClip duck;
+    public AudioClip coin;
     public AudioClip death;
 
     public void changeMusicState()
@@ -82,9 +82,9 @@ public class AudioManager : MonoBehaviour
         effectSource.PlayOneShot(jump);
     }
 
-    public void duckSound()
+    public void coinSound()
     {
-        effectSource.PlayOneShot(duck);
+        effectSource.PlayOneShot(coin);
     }
 
     public void deathSound()
