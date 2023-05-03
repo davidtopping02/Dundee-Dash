@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 1016151393840242557}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,8 +386,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.85, y: 0.93, z: 4.34}
-  m_Center: {x: 0, y: 0.85, z: -0.018977284}
+  m_Size: {x: 1.85, y: 1.26, z: 4.34}
+  m_Center: {x: 0, y: 0.86, z: -0.018977284}
 --- !u!1 &3220844048195430644
 GameObject:
   m_ObjectHideFlags: 0

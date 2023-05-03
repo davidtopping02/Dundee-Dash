@@ -48,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
         // check if the player is on the ground
         if (transform.position.y < 0.3)
         {
+            GameManager._instance.GetComponent<AudioManager>().jumpSound();
+
             // get the player's Rigidbody component
             Rigidbody playerRigidbody = GetComponent<Rigidbody>();
 
@@ -149,6 +151,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "coin")
         {
+            GameManager._instance.GetComponent<AudioManager>().coinSound();
             MainGameEvents.coinCollected.Invoke();
             Debug.Log("coin collided");
         }

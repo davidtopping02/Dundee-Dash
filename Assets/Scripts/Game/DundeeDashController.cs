@@ -57,7 +57,7 @@ public class DundeeDashController : MonoBehaviour
 
             playerDead = true;
             MainGameEvents.playerFall.Invoke();
-            GameManager._instance.GetComponent<AudioManager>().jumpSound();
+            GameManager._instance.GetComponent<AudioManager>().deathSound();
             StartCoroutine(WaitTwoSeconds());
         }
     }

@@ -1894,9 +1894,9 @@ MonoBehaviour:
   effectSource: {fileID: 1792172388}
   mainMenu: {fileID: 8300000, guid: affb21c333a68084190542cc90638f00, type: 3}
   gameMusic: {fileID: 8300000, guid: 7bff426e3dfa754459000495c44ca814, type: 3}
-  jump: {fileID: 8300000, guid: a57bad792bfc2884d8ef1d8b8b7e8238, type: 3}
-  duck: {fileID: 0}
-  death: {fileID: 0}
+  jump: {fileID: 8300000, guid: 0789b75d275a3314b8bad086977813f6, type: 3}
+  coin: {fileID: 8300000, guid: 01529014fb9beaa4ba30d0670d7bdce8, type: 3}
+  death: {fileID: 8300000, guid: a57bad792bfc2884d8ef1d8b8b7e8238, type: 3}
 --- !u!1 &882253383
 GameObject:
   m_ObjectHideFlags: 0
