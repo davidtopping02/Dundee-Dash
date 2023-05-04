@@ -10,6 +10,7 @@ public class coinBehaviour : MonoBehaviour
         transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
     }
 
+    // destoys the coin object when a player collides with it
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))

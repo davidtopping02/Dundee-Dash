@@ -9,25 +9,25 @@ public class LeaderBoard : MonoBehaviour
     private string playerScores;
 
 
+    // Start is called before the first frame update
     void Start()
     {
-        // developing
+        // Initialize the leaderboard ID
         leaderboardID = 13754;
-
-        // live
-        //leaderboardID = 13756;
     }
 
+    // This method logs in the player to the LootLocker server
     public void loginToOnlineServices()
     {
         StartCoroutine(LoginRoutine());
     }
 
+    // This coroutine sets the player's name
     public IEnumerator setPlayerName(string playerName)
     {
-
         bool done = false;
 
+        // Call the LootLocker SDK's SetPlayerName method to set the player's name
         LootLockerSDKManager.SetPlayerName(playerName, (response) =>
         {
             if (response.success)
@@ -42,7 +42,7 @@ public class LeaderBoard : MonoBehaviour
             done = true;
         });
 
-        // Wait until the login is done
+        // Wait until the name change is done
         yield return new WaitWhile(() => done == false);
     }
 
@@ -56,7 +56,6 @@ public class LeaderBoard : MonoBehaviour
         {
             if (response.success)
             {
-                // Log a success message
                 Debug.Log("succesful login");
 
                 // Save the player's ID as a PlayerPrefs
@@ -71,7 +70,6 @@ public class LeaderBoard : MonoBehaviour
             }
         });
 
-        // Wait until the login is done
         yield return new WaitWhile(() => done == false);
 
         yield return getTopHighScores();
@@ -84,7 +82,6 @@ public class LeaderBoard : MonoBehaviour
         }
     }
 
-
     // This coroutine submits the player's score to the leaderboard
     public IEnumerator SubmitScore(int scoreToUpload)
     {
@@ -93,18 +90,15 @@ public class LeaderBoard : MonoBehaviour
         // Get the player's ID from PlayerPrefs
         string playerID = PlayerPrefs.GetString("PlayerID");
 
-
         // Call the LootLocker SDK's SubmitScore method to submit the score to the leaderboard
         LootLockerSDKManager.SubmitScore(playerID, scoreToUpload, leaderboardID, (response) =>
         {
             if (response.success)
             {
-                // Log a success message
                 Debug.Log("score uploaded");
             }
             else
             {
-                // Log a failure message
                 Debug.Log("failed to upload score");
             }
             done = true;
@@ -114,13 +108,15 @@ public class LeaderBoard : MonoBehaviour
         yield return new WaitWhile(() => done == false);
     }
 
-
+    // This coroutine gets the top high scores from the leaderboard
     public IEnumerator getTopHighScores()
     {
         bool done = false;
 
+        // Call the LootLocker SDK's GetScoreListMain method to get the top high scores from the leaderboard
         LootLockerSDKManager.GetScoreListMain(leaderboardID, 10, 0, (response) =>
         {
+
             if (response.success)
             {
                 string tempPlayerNames = "Names\n";
