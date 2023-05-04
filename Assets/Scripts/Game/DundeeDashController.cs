@@ -11,7 +11,7 @@ public class DundeeDashController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 35;
+        moveSpeed = 30;
         stopwatch = gameObject.AddComponent<Stopwatch>();
         MainGameEvents.fullObstacleCollision.AddListener(FullCollision);
         MainGameEvents.playerTrip.AddListener(PlayerTrip);
@@ -35,7 +35,7 @@ public class DundeeDashController : MonoBehaviour
 
     private void updateMoveSpeed()
     {
-        float timeToMaxSpeed = 20f;
+        float timeToMaxSpeed = 22f;
         float maxSpeed = 60;
         float acceleration = 2 * maxSpeed / (timeToMaxSpeed * timeToMaxSpeed);
 
